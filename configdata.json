@@ -1,0 +1,23 @@
+{
+  "admins": [
+    "875703615099134013"
+  ],
+  "moderators": [
+    "875703615099134013"
+  ],
+  "badges": {
+    "owner": "<:Owner:1442289853793304687>",
+    "developer": "💻",
+    "supporter": "💚",
+    "early_adopter": "🌱",
+    "verified": "✅",
+    "moderator": "🛡️",
+    "premium": "⭐"
+  },
+  "blacklists": {
+    "bannedUsers": [],
+    "bannedServers": [],
+    "bannedWords": [],
+    "blacklistedWords": []
+  }
+}
