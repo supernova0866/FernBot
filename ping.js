@@ -12,6 +12,13 @@ app.listen(PORT, () => {
     console.log(`Keep-alive server running on port ${PORT}`);
 });
 
+// Self-ping every 10 minutes to keep bot alive
+setInterval(() => {
+    fetch(`http://localhost:${PORT || 3000}/ping`)
+        .then(() => console.log('Self-ping successful'))
+        .catch(err => console.error('Self-ping failed:', err));
+}, 10 * 60 * 1000);
+
 // Ping the partner's Render URL every 5 minutes
 const PARTNER_URL = process.env.PARTNER_PING_URL;
 
