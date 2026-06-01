@@ -8,7 +8,7 @@ app.get('/ping', (req, res) => {
     res.send('pong');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Keep-alive server running on port ${PORT}`);
 });
 
