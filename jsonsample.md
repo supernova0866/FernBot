@@ -142,11 +142,3 @@ Record of all registered users.
 - `lastDecay` — Unix timestamp (ms) of last heat decay calculation
 
 ---
-
-## `data/heat.json` *(unused — safe to ignore)*
-
-> This file was never written to by any part of the codebase. Heat data is stored directly on the user object in `data/users.json` via the `heat` and `lastDecay` fields. `heat.js` reads and writes those through `users.updateUser()`. This file can be safely deleted or ignored.
-
----
-
-*Last updated: badges, blacklists, moderators, calls, users received. heat.json confirmed unused. DB migrating to Turso (users + calls only).*
