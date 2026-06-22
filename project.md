@@ -217,7 +217,7 @@ All reports post to hardcoded Discord channel: `REPORT_CHANNEL_ID = '14422956180
 
 ## Turso Migration (Planned)
 
-**Why Turso:** SQLite-based (libSQL), generous free tier (9GB, 500 DBs), faster latency than Supabase for a persistent Node.js bot. Reports stay in Discord (only user ID needed to act), so no dashboard requirement — Turso wins.
+**Why Turso:** SQLite-based (libSQL), good free tier (9GB, 500 DBs), faster latency than Supabase for a persistent Node.js bot. Reports stay in Discord (only user ID needed to act), so no dashboard requirement.
 
 **Scope:** Only `data/users.json` and `data/calls.json` migrate to Turso. `configdata.json` stays file-based on GitHub (rarely changes).
 
@@ -292,5 +292,3 @@ All reports post to hardcoded Discord channel: `REPORT_CHANNEL_ID = '14422956180
 | `RENDER_PING_URL`      | Bot's Render URL for keep-alive ping |
 
 ---
-
-*Last updated: all files received — fern.js, managers/(badges, blacklists, users, status), systems/(cmds, calls, heat, reports, notify)*
